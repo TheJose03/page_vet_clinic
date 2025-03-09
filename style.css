@@ -1,0 +1,366 @@
+/* Variables CSS */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #18bc9c;
+  --accent-color: #f39c12;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --text-color: #333;
+  --white-color: #fff;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+  --border-radius: 8px;
+}
+
+/* Estilos Generales */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section-title {
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--secondary-color);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  padding: 15px 0;
+  transition: var(--transition);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-brand i {
+  color: var(--secondary-color);
+  margin-right: 5px;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin: 0 10px;
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  margin-top: -76px; /* Compensar la altura del navbar */
+}
+
+.hero-image {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  color: var(--white-color);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-cta {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.btn-cta:hover {
+  background-color: #e67e22;
+  color: var(--white-color);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Service Cards */
+.service-card {
+  border: none;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.service-card .card-title {
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Team Cards */
+.team-card {
+  border: none;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.team-img-container {
+  width: 150px;
+  height: 150px;
+  margin: 2rem auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid var(--secondary-color);
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-specialty {
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.team-card .card-title {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact-card,
+.form-card {
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contact-phone {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+  color: var(--white-color);
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.btn-whatsapp:hover {
+  background-color: #128c7e;
+  color: var(--white-color);
+}
+
+.contact-info {
+  margin-top: 2rem;
+}
+
+.contact-info i {
+  color: var(--secondary-color);
+  margin-right: 10px;
+  width: 20px;
+}
+
+/* Form */
+.form-control {
+  border-radius: var(--border-radius);
+  padding: 12px;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 0.25rem rgba(24, 188, 156, 0.25);
+}
+
+.btn-submit {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-weight: 600;
+  padding: 12px;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.btn-submit:hover {
+  background-color: #16a085;
+  color: var(--white-color);
+}
+
+/* Modal */
+.modal-content {
+  border-radius: var(--border-radius);
+}
+
+.modal-title {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.footer-title i {
+  color: var(--secondary-color);
+  margin-right: 5px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-color);
+  transition: var(--transition);
+}
+
+.social-icon:hover {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+

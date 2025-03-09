@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria</title>
+    <!-- Bootstrap 5.3.0 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6.0 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Menú fijo superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-paw"></i> Clínica Veterinaria</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee" alt="Clínica Veterinaria">
+            <div class="hero-overlay">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Bienvenido a nuestra Clínica Veterinaria 🐶 🐱</h1>
+                        <p>Cuidamos de tus mascotas con el amor y profesionalismo que merecen. Más de 10 años de experiencia nos respaldan.</p>
+                        <a href="#contacto" class="btn btn-cta">Agenda una cita</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Nuestros Servicios</h2>
+            <div class="row">
+                <!-- Card 1: Consulta General -->
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <img src="https://purina.com.do/sites/default/files/2022-10/purina-consulta-veterinaria-para-mascotas-lo-que-debes-saber.jpg" class="card-img-top" alt="Consulta General">
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <h3 class="card-title">Consulta General</h3>
+                            <p class="card-text">Examen completo de tu mascota, diagnóstico preciso y tratamiento adecuado para mantener su salud.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2: Cirugías -->
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <img src="https://holavet.com.ar/wp-content/uploads/2022/04/close-up-on-veterinarian-taking-care-of-pet-1.webp" class="card-img-top" alt="Cirugías">
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <h3 class="card-title">Cirugías</h3>
+                            <p class="card-text">Procedimientos quirúrgicos realizados por especialistas con equipamiento de última generación.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3: Peluquería -->
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <img src="https://neozoo.com.ar/wp-content/uploads/2023/06/Iconos-e-imagenes-09.png" class="card-img-top" alt="Peluquería">
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <i class="fas fa-cut"></i>
+                            </div>
+                            <h3 class="card-title">Peluquería</h3>
+                            <p class="card-text">Servicio de estética y cuidado del pelaje para mantener a tu mascota limpia y saludable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Equipo -->
+    <section id="equipo" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Nuestro Equipo</h2>
+            <div class="row">
+                <!-- Perfil 1: Dra. Ana López -->
+                <div class="col-md-4 mb-4">
+                    <div class="card team-card h-100">
+                        <div class="team-img-container">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" class="team-img" alt="Dra. Ana López">
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Dra. Ana López</h3>
+                            <p class="team-specialty">Medicina General</p>
+                            <p class="card-text">Especialista en medicina preventiva con más de 8 años de experiencia en el cuidado de pequeñas mascotas.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Perfil 2: Dr. Carlos Méndez -->
+                <div class="col-md-4 mb-4">
+                    <div class="card team-card h-100">
+                        <div class="team-img-container">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" class="team-img" alt="Dr. Carlos Méndez">
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Dr. Carlos Méndez</h3>
+                            <p class="team-specialty">Cirugía</p>
+                            <p class="card-text">Cirujano veterinario con especialidad en procedimientos ortopédicos y más de 10 años de experiencia.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Perfil 3: Dra. Laura Gómez -->
+                <div class="col-md-4 mb-4">
+                    <div class="card team-card h-100">
+                        <div class="team-img-container">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" class="team-img" alt="Dra. Laura Gómez">
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Dra. Laura Gómez</h3>
+                            <p class="team-specialty">Dermatología</p>
+                            <p class="card-text">Especialista en problemas dermatológicos y alergias en mascotas, con enfoque en tratamientos innovadores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Contacto</h2>
+            <div class="row">
+                <!-- Tarjeta de contacto -->
+                <div class="col-md-6 mb-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Información de Contacto</h3>
+                            <p class="contact-phone">+54-1234-567890-123</p>
+                            <a href="https://wa.me/541234567890123" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <div class="contact-info mt-4">
+                                <p><i class="fas fa-map-marker-alt"></i> Av. Veterinaria 123, Ciudad</p>
+                                <p><i class="far fa-clock"></i> Lunes a Viernes: 9:00 - 19:00<br>Sábados: 9:00 - 14:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulario de contacto -->
+                <div class="col-md-6 mb-4">
+                    <div class="card form-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Envíanos un mensaje</h3>
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                    <div class="invalid-feedback">Por favor ingresa tu nombre</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                    <div class="invalid-feedback">Por favor ingresa un email válido</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                                    <div class="invalid-feedback">Por favor ingresa tu mensaje</div>
+                                </div>
+                                <button type="submit" class="btn btn-submit w-100">Enviar Mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Confirmación -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">¡Mensaje Enviado! 📧</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Gracias por contactarnos. Te responderemos a la brevedad. 🐾</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h3 class="footer-title"><i class="fas fa-paw"></i> Clínica Veterinaria</h3>
+                    <p>Cuidando a tus mascotas desde 2010</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; <span id="year"></span> Clínica Veterinaria. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
+
